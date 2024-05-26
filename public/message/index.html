@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send message to all subscribers</title>
+</head>
+<body>
+    <form method="post" hx-post="/message" hx-target="#output">
+        <label for="message">Message</label>
+        <input type="text" name="message">
+        <input type="submit" value="send">
+    </form>
+    <div id="output"></div>
+    <script src="https://unpkg.com/htmx.org@1.9.12" integrity="sha384-ujb1lZYygJmzgSwoxRggbCHcjc0rB2XoQrxeTUQyRjrOnlCoYta87iKBWq3EsdM2" crossorigin="anonymous"></script>
+</body>
+</html>
